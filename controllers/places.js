@@ -15,6 +15,11 @@ router.get('/', (req, res) => {
         pic: '/images/coffee-bakery.jpg'
       }]
       
+      router.get('/new', (req, res) => {
+        res.render('places/new')
+      })
+      
+      
     res.render('places/index', {places})
 })
 
