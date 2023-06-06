@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 // const express = require('express')
 // const app = express()
 
@@ -21,7 +21,6 @@ require('dotenv').config()
 // app.listen(process.env.PORT)
 
 
-//Henry Index.js
 //Modules and Globals
 require('dotenv').config()
 const express = require('express')
