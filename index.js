@@ -29,10 +29,11 @@ const methodOverride = require('method-override')
 
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(methodOverride('_method'))
 app.use('/places', require('./controllers/places'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
-app.use(methodOverride('_method'))
+
 
 // app.get('/', (req, res) => {
 //     res.send('Hello world!')

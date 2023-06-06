@@ -101,6 +101,7 @@ router.get('/new', (req, res) => {
 
 //Delete
 router.delete('/:id', (req, res) => {
+  console.log(req.params)
   let id = Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')
