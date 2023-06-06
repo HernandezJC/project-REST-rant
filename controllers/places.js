@@ -43,6 +43,3 @@ module.exports = router
 
 
 // Ask how to make pictures smaller
-
-
-
