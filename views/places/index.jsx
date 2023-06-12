@@ -25,17 +25,17 @@
 // module.exports = index
 
 
-//Henry index
+//Index
 const React = require('react')
 const Def = require('../default')
 
 function index (data) {
     //console.log(data.places.name)
-    let placesFormatted = data.places.map((place, index) => {
+    let placesFormatted = data.places.map((place) => {
         return (
           <div className="col-sm-6">
             <h2>{place.name}</h2>
-            <a href={`/places/${index}`}>
+            <a href={`/places/${place.id}`}>
               {place.name}
             </a>
             <p className="text-center">
