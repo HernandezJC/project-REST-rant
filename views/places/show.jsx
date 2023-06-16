@@ -39,6 +39,7 @@ function show (data) {
             <h3>
               Serving {data.place.cuisines}
             </h3>
+            <hr/>
             <h2>Comments</h2>
             {comments}
             <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
